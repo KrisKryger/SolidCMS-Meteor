@@ -7,3 +7,22 @@ body {
 a {
   color: #00B7FF;
 }
+
+.login-buttons {
+  display: table;
+  float: right;
+  overflow: inherit;
+  height: 50px;
+  padding: 0px 250px 0px 0px;
+}
+.v-align {
+  display: table-cell;
+  vertical-align: middle;
+}
+.v-align a {
+  text-decoration: none!important;
+  color: #00B7FF;
+}
+.v-align a:hover {
+  color: black;
+}
