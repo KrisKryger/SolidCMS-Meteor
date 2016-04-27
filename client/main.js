@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
@@ -24,6 +23,3 @@ Template.hello.events({
     instance.counter.set(instance.counter.get() + 1);
   },
 });
-=======
-import '../imports/ui/body.js';
->>>>>>> 582230cdf020e76da6c58201f6bb1c6abc6d3647
