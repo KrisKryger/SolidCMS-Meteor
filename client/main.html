@@ -1,5 +1,17 @@
 <head>
   <title>SolidCMS</title>
+  <style>
+    .login-buttons {
+      display: table;
+      float: right;
+      overflow: inherit;
+      height: 50px;
+    }
+    .v-align {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,34 +27,12 @@
 					<li>
 						<a href="/" title="home">Home</a>
 					</li>
-					<li>
-						<a href="/auth/login" title="login">Login</a>
-					</li>
-					<li>
-						<a href="/auth/register" title="login">Register</a>
-					</li>
-					<li>
-						<a href="/content-page" title="login">Articles</a>
-					</li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a aria-expanded="false" aria-haspopup="true" class=
-						"dropdown-toggle" data-toggle="dropdown" href="#" role=
-						"button">User<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li>
-								<a href="/users">Users</a>
-							</li>
-							<li>
-								<a href="/auth/login">Login</a>
-							</li>
-							<li>
-								<a href="/auth/register">Register</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+        <span class="login-buttons">
+          <span class="v-align">
+            {{> loginButtons}}
+          </span>
+        </span>
 			</div>
 		</nav>
 		{{> content}}
