@@ -1,6 +1,47 @@
 <head>
   <title>SolidCMS</title>
+  <style>
+    .login-buttons {
+      display: table;
+      float: right;
+      overflow: inherit;
+      height: 50px;
+    }
+    .v-align {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
 </head>
+<<<<<<< HEAD
+=======
+
+<body>
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid"></div>
+			<div class="navbar-header">
+				<a class="navbar-brand" href="/" title="brand">SolidCMS</a>
+			</div>
+			<div class="collapse navbar-collapse" id=
+			"bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="/" title="home">Home</a>
+					</li>
+				</ul>
+        <span class="login-buttons">
+          <span class="v-align">
+            {{> loginButtons}}
+          </span>
+        </span>
+			</div>
+		</nav>
+		{{> content}}
+	</div>
+</body>
+
+>>>>>>> 49a93b0632de084fb80cc614b80d1e0cb99fe6b9
 <template name="content">
 	HEllo
 </template>
